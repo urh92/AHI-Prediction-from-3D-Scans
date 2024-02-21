@@ -11,7 +11,7 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from transformations import Rescale, Normalize, ToTensor 
-from PSGDataset import PSGDataset
+from psg_dataset import PSGDataset
 import matplotlib.pyplot as plt
 from models import TransferNetwork
 from torchvision import transforms

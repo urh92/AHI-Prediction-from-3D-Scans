@@ -14,8 +14,8 @@ import zipfile
 # Disable chained assignment warnings in pandas
 pd.options.mode.chained_assignment = None
 
-# Define a function to verify Apnea-Hypopnea Index (AHI) from sleep study data
-def verify_ahi(files_path, demographics_path, cpap_path): 
+# Define a function to calculate Apnea-Hypopnea Index (AHI) from sleep study data
+def calc_ahi(files_path, demographics_path, cpap_path): 
     patient_info = []  # List to store patient data summaries
     i = 0  # Initialize a counter for tracking the number of processed patients
     files = glob.glob(files_path + '*.csv')  # Retrieve all CSV files in the specified directory
@@ -114,5 +114,5 @@ files_path = 'E:/EDFs/'
 demographics_path = 'C:/Users/umaer/OneDrive/Documents/PhD/Journal Papers/OSA Prediction/Data/20191106DemographicSTAGES.xlsx'
 cpap_path = 'C:/Users/umaer/OneDrive/Documents/PhD/Journal Papers/OSA Prediction/Data/CPAP.xlsx'
 
-# Call the verify_ahi function with the specified file paths to process the data and verify AHI values
-demographics = verify_ahi(files_path, demographics_path, cpap_path)
+# Call the calc ahi function with the specified file paths to process the data and calculate AHI values
+ahi_values = calc_ahi(files_path, demographics_path, cpap_path)

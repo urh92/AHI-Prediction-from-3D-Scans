@@ -6,7 +6,7 @@ import pandas as pd
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from python_json_config import ConfigBuilder
-from PSGDataset import PSGDataset
+from psg_dataset import PSGDataset
 from models import TransferNetwork
 from transformations import Rescale, Normalize, ToTensor
 

@@ -1,0 +1,20 @@
+{
+  "batch_size": 8,
+  "weight_decay": 0.0005,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "n_images": 10,
+  "label": "ahi",
+  "predict_mode": "regression",
+  "split_mode": "same",
+  "imbalance": "none",
+  "augmentation": 0,
+  "lr": 0.00001,
+  "epochs": 10,
+  "train_fraction": 0.9,
+  "img_dir": "C:/Users/umaer/Documents/processed_rgb/",
+  "train_label_dir": "C:/Users/umaer/Documents/Data/Trainingset.xlsx",
+  "test_label_dir": "C:/Users/umaer/Documents/Data/Testset.xlsx",
+  "checkpoint_dir": "C:/Users/umaer/Documents/Run 1/",
+  "weights_path": "C:/Users/umaer/OneDrive/Documents/PhD/Code/predictDemographics/vgg_face_dag.pth"
+}
